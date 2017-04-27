@@ -1,25 +1,10 @@
-# FeedHenry Hello World MBaaS Server
+This is a service to take a Salesforce / Support Portal url and return the url to its equivalent Ascension case
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+* Create service in RHMAP studio by importing the code in this repo
+* Create 4 environment variables
+QUERY: The SOQL query to run against sf database
+ROOT: https://access.redhat.com/support/cases/internal/#/ascension/case/
+USERNAME: API username to log into Salesforce with
+PASSWORD: password to log into Salesforce with
 
-# Group Hello World API
-
-# hello [/hello]
-
-'Hello world' endpoint.
-
-## hello [POST] 
-
-'Hello world' endpoint.
-
-+ Request (application/json)
-    + Body
-            {
-              "hello": "world"
-            }
-
-+ Response 200 (application/json)
-    + Body
-            {
-              "msg": "Hello world"
-            }
+* Deploy app
